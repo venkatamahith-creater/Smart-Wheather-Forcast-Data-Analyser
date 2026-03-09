@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Weather Forecast Data Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🌤 Smart Weather Forecast Data Analyzer</h1>
+        <p>
+            Intelligent system designed to collect, process, and analyze 
+            historical and real-time meteorological data such as temperature, 
+            humidity, rainfall, and wind speed to generate accurate forecasts.
+        </p>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="city" placeholder="Enter City Name">
+        <button onclick="generateWeather()">Analyze</button>
+    </div>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h2>Temperature</h2>
+            <div class="value" id="temp">-- °C</div>
+            <p>Real-time temperature reading</p>
+        </div>
+
+        <div class="card">
+            <h2>Humidity</h2>
+            <div class="value" id="humidity">-- %</div>
+            <p>Atmospheric moisture level</p>
+        </div>
+
+        <div class="card">
+            <h2>Rainfall</h2>
+            <div class="value" id="rainfall">-- mm</div>
+            <p>Expected precipitation</p>
+        </div>
+
+        <div class="card">
+            <h2>Wind Speed</h2>
+            <div class="value" id="wind">-- km/h</div>
+            <p>Current wind velocity</p>
+        </div>
+
+        <div class="card analysis">
+            <h2>Weather Analysis</h2>
+            <ul id="analysisData">
+                <li>Average Temperature: --</li>
+                <li>Trend: --</li>
+                <li>Risk Level: --</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Smart Weather Forecast Data Analyzer | Academic Project
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
